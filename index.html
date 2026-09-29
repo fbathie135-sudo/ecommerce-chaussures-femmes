@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LUNÉA — Chaussures féminines, sélectionnées avec style. Découvrez nos nouveautés, essentiels et coups de cœur." />
+  <title>LUNÉA — Chaussures féminines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Livraison offerte dès 80€ <span>•</span> Retours gratuits sous 30 jours</div>
+  <header class="site-header">
+    <button class="icon-btn menu-toggle" aria-label="Ouvrir le menu">☰</button>
+    <a class="logo" href="#accueil" aria-label="Lunéa, accueil">LUNÉA<span>.</span></a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#nouveautes">Nouveautés</a><a href="#collection">Collections</a><a href="#best-sellers">Best-sellers</a><a href="#journal">Le journal</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Rechercher" id="search-toggle">⌕</button>
+      <button class="icon-btn" aria-label="Votre panier" id="cart-toggle">♧ <b class="cart-count">0</b></button>
+    </div>
+  </header>
+  <div class="search-bar" id="search-bar"><input id="search-input" type="search" placeholder="Rechercher une paire, une couleur…" aria-label="Rechercher"><button id="close-search">×</button></div>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-copy"><p class="eyebrow">Collection automne / hiver 2024</p><h1>Marchez avec<br><em>assurance.</em></h1><p class="hero-text">Des chaussures pensées pour révéler votre style, du premier rendez-vous au dernier verre.</p><a class="button button-dark" href="#nouveautes">Découvrir la collection <span>→</span></a></div>
+      <div class="hero-image"><img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=85" alt="Escarpins beige élégants" /><div class="hero-note"><strong>01</strong><span>La paire qui<br>change tout.</span></div></div>
+    </section>
+
+    <section class="category-strip" id="collection"><a href="#shop" data-category="Escarpins"><span>01</span><strong>Escarpins</strong><small>Élégance intemporelle →</small></a><a href="#shop" data-category="Baskets"><span>02</span><strong>Baskets</strong><small>Confort & caractère →</small></a><a href="#shop" data-category="Bottines"><span>03</span><strong>Bottines</strong><small>Prêtes à tout →</small></a><a href="#shop" data-category="Sandales"><span>04</span><strong>Sandales</strong><small>Légèreté assumée →</small></a></section>
+
+    <section class="shop-section" id="shop"><div class="section-heading"><div><p class="eyebrow">La sélection Lunéa</p><h2>Vos prochains <em>essentiels.</em></h2></div><a class="text-link" href="#shop" id="all-products">Voir toute la sélection →</a></div>
+      <div class="shop-toolbar"><div class="filters" role="group" aria-label="Filtrer par catégorie"><button class="filter active" data-filter="Tous">Tout</button><button class="filter" data-filter="Escarpins">Escarpins</button><button class="filter" data-filter="Baskets">Baskets</button><button class="filter" data-filter="Bottines">Bottines</button><button class="filter" data-filter="Sandales">Sandales</button></div><select id="sort-products" aria-label="Trier les produits"><option value="featured">Trier : sélection</option><option value="price-low">Prix croissant</option><option value="price-high">Prix décroissant</option></select></div>
+      <div class="products-grid" id="product-grid"></div><p class="empty-state" id="empty-state">Aucun modèle ne correspond à votre recherche.</p>
+    </section>
+
+    <section class="editorial" id="nouveautes"><div class="editorial-image"><img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=1000&q=85" alt="Baskets blanches minimalistes" /></div><div class="editorial-copy"><p class="eyebrow">L'objet du moment</p><h2>Simplement<br><em>inoubliable.</em></h2><p>Une silhouette épurée, une allure qui reste. Découvrez Alba, notre basket signature imaginée pour accompagner toutes vos journées.</p><a class="button button-outline" href="#shop" data-category="Baskets">Voir Alba <span>→</span></a></div></section>
+
+    <section class="values"><div><span>✦</span><h3>Des matières choisies</h3><p>Cuirs souples et matières responsables, sélectionnés avec soin.</p></div><div><span>◌</span><h3>Le confort d'abord</h3><p>Chaque modèle est testé pour vous suivre toute la journée.</p></div><div><span>↺</span><h3>Retour facile</h3><p>Essayez tranquillement chez vous, les retours sont offerts.</p></div></section>
+    <section class="newsletter" id="journal"><p class="eyebrow">Le journal Lunéa</p><h2>Une dose de style<br>dans votre boîte mail.</h2><p>Conseils, inspirations et accès privilégié aux nouveautés.</p><form id="newsletter-form"><input type="email" placeholder="Votre adresse e-mail" aria-label="Votre adresse e-mail" required><button class="button button-dark">S'inscrire →</button></form><small id="newsletter-message"></small></section>
+  </main>
+
+  <footer><a class="logo" href="#accueil">LUNÉA<span>.</span></a><p>Des chaussures pour les femmes qui avancent.</p><div class="footer-links"><a href="#shop">Boutique</a><a href="#journal">Contact</a><a href="#">Instagram</a><a href="#">Livraison & retours</a></div><small>© 2024 Lunéa. Tous droits réservés.</small></footer>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Votre panier"><div class="cart-header"><h2>Votre panier</h2><button class="icon-btn" id="close-cart" aria-label="Fermer">×</button></div><div id="cart-items"></div><div class="cart-footer"><div><span>Sous-total</span><strong id="cart-total">0,00 €</strong></div><button class="button button-dark checkout">Passer la commande →</button><small>Taxes incluses · Livraison calculée à l'étape suivante</small></div></aside><div class="overlay" id="overlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
